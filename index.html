@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/js-datepicker/dist/datepicker.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>M8 | Age Calculator</title>
+  </head>
+  <body>
+    <main class="p-6">
+      <label for="message" class="block font-bold mb-2">
+        Write your message
+      </label>
+
+      <div class="relative w-fit">
+        <textarea
+          name="message"
+          id="message"
+          rows="5"
+          cols="30"
+          class="border border-black rounded-xl p-2 resize-none"
+          placeholder="Start typing..."
+          minlength="10"
+          maxlength="200"
+        ></textarea>
+
+        <span
+          id="counter"
+          class="absolute bottom-3 right-3 text-sm text-gray-500"
+          >0 / 200</span
+        >
+      </div>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
